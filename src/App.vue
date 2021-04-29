@@ -1,19 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    EtherScan App
+    <table>
+      <tr v-for="account in accounts" :key="account">
+        <td>{{ account }}</td>
+      </tr>
+    </table>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  data() {
+    return {
+      accounts: [],
+    };
+  },
+  mounted() {
+    let Web3 = require("web3");
+    let web3 = new Web3("http://localhost:8545");
+    let self = this;
+    web3.eth.getAccounts().then((accounts) => {
+      self.accounts = accounts;
+    });
+  },
+};
 </script>
 
 <style>
