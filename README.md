@@ -20,6 +20,8 @@
 - Using Ganache
   - Create a blockchain
   - Deploy the contract using Remix IDE with web3 provider as environment pointing to Ganache RPC
+  - go to the [contract]_metadata.json and get the abi (Application Binary) array
+  - The abi is use to create web apps and to use the functions defined in the contracts
 
 ### Scripts (package.json)
 
