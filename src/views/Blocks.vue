@@ -30,11 +30,11 @@ export default {
   },
   async mounted() {
     let Web3 = require("web3");
-    let web3 = new Web3("http://localhost:8545");
+    let web3 = new Web3("http://localhost:7545");
 
     this.blockNumber = await web3.eth.getBlockNumber();
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < this.blockNumber; i++) {
       web3.eth.getBlock(this.blockNumber - i).then((block) => {
         this.blocks.push(block);
       });

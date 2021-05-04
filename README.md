@@ -4,17 +4,22 @@
 
 ### How to run
 
-- Initialize the Network using genesis.json file in a separate folder
+- Using geth
+  - Initialize the Network using genesis.json file in a separate folder
+
+      ```sh
+      geth --rpc --rpcport "8545" --datadir ./chaindata init ./genesis.json
+      ```
+
+  - Start the network with a single ethereum node
 
     ```sh
-    geth --rpc --rpcport "8545" --datadir ./chaindata init ./genesis.json
+    geth --rpc --rpcport "8545" --datadir ./chaindata --rpcapi admin,eth,net,web3,personal,miner,txpool --rpccorsdomain "*" --allow-insecure-unlock
     ```
 
-- Start the network with a single ethereum node
-
-  ```sh
-  geth --rpc --rpcport "8545" --datadir ./chaindata --rpcapi admin,eth,net,web3,personal,miner,txpool --rpccorsdomain "*" --allow-insecure-unlock
-  ```
+- Using Ganache
+  - Create a blockchain
+  - Deploy the contract using Remix IDE with web3 provider as environment pointing to Ganache RPC
 
 ### Scripts (package.json)
 
@@ -58,6 +63,8 @@ npm run lint
   - [GitHub](https://github.com/jgthms/bulma)
   - [Usage](https://github.com/neovive/bulma-vuecli/blob/master/README.md)
   - [CSS Import Rule](https://www.w3schools.com/cssref/pr_import_rule.asp)
+- [Ganache - Geth Alternative](https://www.trufflesuite.com/ganache)
+- [Remix IDE](https://remix.ethereum.org/)
 
 #### Other Articles
 

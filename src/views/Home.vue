@@ -32,7 +32,7 @@ export default {
   },
   mounted() {
     let Web3 = require("web3");
-    let web3 = new Web3("http://localhost:8545");
+    let web3 = new Web3("http://localhost:7545");
     web3.eth.getAccounts().then((accounts) => {
       accounts.forEach((account) => {
         let newAccount = {
