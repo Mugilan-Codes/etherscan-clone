@@ -51,6 +51,8 @@ npm run lint
 - [Vetur - Vue tooling for VS Code](https://vuejs.github.io/vetur/)
   - [Setup](https://vuejs.github.io/vetur/guide/setup.html)
   - [vetur.config.js](https://vuejs.github.io/vetur/guide/setup.html#advanced)
+- [Vue Router](https://router.vuejs.org/)
+  - [Install using Vue-Cli](https://router.vuejs.org/installation.html#vue-cli)
 
 #### Other Articles
 
