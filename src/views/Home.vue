@@ -4,16 +4,20 @@
     <table>
       <thead>
         <tr>
+          <th>#</th>
           <th>Address</th>
           <th>Balance</th>
           <th>Txn Count</th>
         </tr>
       </thead>
-      <tr v-for="account in accounts" :key="account.address">
-        <td>{{ account.address }}</td>
-        <td>{{ account.balance }} Ether</td>
-        <td>{{ account.txnCount }}</td>
-      </tr>
+      <tbody>
+        <tr v-for="(account, index) in accounts" :key="account.address">
+          <td>{{ index + 1 }}</td>
+          <td>{{ account.address }}</td>
+          <td>{{ account.balance }} Ether</td>
+          <td>{{ account.txnCount }}</td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </template>
