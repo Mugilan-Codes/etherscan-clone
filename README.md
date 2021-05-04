@@ -67,6 +67,8 @@ npm run lint
   - [CSS Import Rule](https://www.w3schools.com/cssref/pr_import_rule.asp)
 - [Ganache - Geth Alternative](https://www.trufflesuite.com/ganache)
 - [Remix IDE](https://remix.ethereum.org/)
+- [Truffle](https://www.trufflesuite.com/docs/truffle/overview)
+- [solc-js](https://www.npmjs.com/package/solc)
 
 #### Other Articles
 
