@@ -50,6 +50,7 @@ npm run lint
 - [web3.js - Ethereum JavaScript API](https://web3js.readthedocs.io/en/v1.3.4/)
 - [Vetur - Vue tooling for VS Code](https://vuejs.github.io/vetur/)
   - [Setup](https://vuejs.github.io/vetur/guide/setup.html)
+  - [vetur.config.js](https://vuejs.github.io/vetur/guide/setup.html#advanced)
 
 #### Other Articles
 
