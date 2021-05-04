@@ -9,6 +9,9 @@
           <div class="navbar-start">
             <router-link class="navbar-item" to="/">Accounts</router-link>
             <router-link class="navbar-item" to="/blocks">Blocks</router-link>
+            <router-link class="navbar-item" to="/dapp"
+              >Storage DApp</router-link
+            >
           </div>
         </div>
       </div>
