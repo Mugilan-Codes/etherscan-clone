@@ -48,6 +48,7 @@ npm run lint
   - [Customize configuration](https://cli.vuejs.org/config/).
 - [Vue.js v2](https://vuejs.org/v2/guide/)
 - [web3.js - Ethereum JavaScript API](https://web3js.readthedocs.io/en/v1.3.4/)
+  - [utils - fromWei](https://web3js.readthedocs.io/en/v1.3.4/web3-utils.html#fromwei)
 - [Vetur - Vue tooling for VS Code](https://vuejs.github.io/vetur/)
   - [Setup](https://vuejs.github.io/vetur/guide/setup.html)
   - [vetur.config.js](https://vuejs.github.io/vetur/guide/setup.html#advanced)
